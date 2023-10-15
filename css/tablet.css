@@ -1,0 +1,98 @@
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .hero {
+        background-image: linear-gradient(rgba(45, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                            url("../images/media/hero2xtabletview.jpg");    
+        min-width: 768px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;  
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .container{
+    max-width: 768px;
+    
+    }
+    .what-are-we-doing {
+        display: none;
+    }
+    .feature-list .feature-list-item-icon{
+        display: none;
+    }
+    .hero-cta {
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        margin: auto;
+    }
+     .hero-title {
+        display: block;
+        max-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.11em;
+        letter-spacing: 0.72px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 36px;        
+    }
+    .feature-list {
+        margin: auto;
+        min-height: 120px;
+        gap: 72px 24px;
+        display: block;
+        text-align: left;
+        justify-content: center;
+    }
+    .feature-list-item-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11em;
+        letter-spacing: 0.72px;
+        margin-bottom: 8px;
+    }
+     .our-team {
+      margin: auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 64px;
+     
+    }
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .headeradd {
+        margin: auto;
+        padding: 16px;
+        text-align: left;
+        justify-content: center;
+        }
+
+    .header {
+        border-bottom: 1px solid var(--cornflower);
+        
+        }
+    
+   .footer-details-container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 72px;
+    
+   }
+   .footer-container{
+    max-width: 552px;
+   }
+}
