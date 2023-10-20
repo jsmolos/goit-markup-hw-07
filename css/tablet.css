@@ -1,0 +1,81 @@
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    } 
+
+    .main-header-menu-list {
+        gap: 24px;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 12px 0;
+        background-image: url(../images/dark-bg768.png), url(../images/herobg768.jpg), linear-gradient(rgb(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/dark-bg768.png), url(../images/herobg768.jpg), linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));}
+    }    
+
+    .hero-title {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 1.12px; 
+    }
+
+    .feature-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: unset;
+        row-gap: 72px;
+    }
+
+    .feature-list-item {
+        width: calc((100 / 2) -30px);
+    }
+
+    .feature-list-item-title {
+        text-align: left;
+    }    
+
+    .feature-list-item-icon {
+        display: none;
+    }    
+
+    .what-are-we-doing {
+        display: none;
+    }    
+
+    .our-team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 64px;
+    }    
+
+    .customers-lists {
+        max-width: 552px;
+        margin: 0 auto;
+    }
+
+    .footer-socmed-container {
+        flex-direction: row;
+    }
+
+    .footer-substitle {
+        margin: 0 auto;
+    } 
+}
+
+
+
+

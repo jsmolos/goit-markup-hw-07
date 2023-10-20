@@ -6,11 +6,14 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WebStudio</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
+        <link rel="stylesheet" href="./css/tablet.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/style.css" />
+        
     </head>
     <body>
         <header class="header">
@@ -19,9 +22,9 @@
                     <a class="main-header-logo-link" href="/goit-markup-hw-03/"><span class="iris">web</span>studio</a>
 
                     <ul class="main-header-menu-list">
-                        <li class="main-header-list-item"><a class="main-header-menu-list-item-link menu-active" href="">Studio</a></li>
+                        <li class="main-header-list-item"><a class="main-header-menu-list-item-link menu-active" href="index.html">Studio</a></li>
                         <li class="main-header-list-item"><a class="main-header-menu-list-item-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="main-header-list-item"><a class="main-header-menu-list-item-link" href="">Contacts</a></li>
+                        <li class="main-header-list-item"><a class="main-header-menu-list-item-link" href="Contacts">Contacts</a></li>
                     </ul>
                 </nav>
 
@@ -31,6 +34,13 @@
                     <li><a class="main-header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
                 </address>
+
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile-menu-icon" width="32" height="22">
+                        <use href="./images/icons.svg#burger" class="burgerlink"></use>    
+                    </svg>
+                </button>                
+                
             </div>    
         </header>
                     
@@ -313,23 +323,23 @@
                 <a class="footer-logo-link" href="/goit-markup-hw-03/"><span class="iris">web</span>studio</a>
                 <p class="footer-description">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>      
-            <div class="footer-socmed-container">
-                <h2 class="footer-socmed-title">Social media</h2>
-                    <ul class="footer-socmed-list">
-                        <li class="footer-socmed-list-item">
+                <div class="footer-socmed-container">
+                    <h3 class="footer-socmed-title">Social media</h2>
+                        <ul class="footer-socmed-list">
+                            <li class="footer-socmed-list-item">
                             <svg class="team-socmed-list-item-icon"><use href="./images/icons.svg#instagram" /></svg>
-                        </li>
-                        <li class="footer-socmed-list-item">
+                            </li>
+                            <li class="footer-socmed-list-item">
                             <svg class="team-socmed-list-item-icon"><use href="./images/icons.svg#twitter" /></svg>
-                        </li>
-                        <li class="footer-socmed-list-item">
+                            </li>
+                            <li class="footer-socmed-list-item">
                             <svg class="team-socmed-list-item-icon"><use href="./images/icons.svg#facebook" /></svg>
-                        </li>
-                        <li class="footer-socmed-list-item">
+                            </li>
+                            <li class="footer-socmed-list-item">
                             <svg class="team-socmed-list-item-icon"><use href="./images/icons.svg#linkedIn" /></svg>
-                        </li>
-                    </ul>
-            </div>  
+                            </li>
+                        </ul>
+                </div>  
             <div class="footer-form-container">
                 <form class="footer-subscription-form" name="subscribe-form" autocomplete="on">
                     <label class="footer-subscription-label">
@@ -402,9 +412,65 @@
                     </button>
                 </div>
             </div>
-           </div>     
+           </div>   
+           
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu mobile-close-btn">&times;</button>
 
-        <script defer src="js/mobile-menu.js"></script>
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">Contacts</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-contacts-list list">
+                <li class="mobile-contacts-item">
+                    <a class=" mobile-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-contacts-item">
+                    <a class=" mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-socmed-list list">
+                <li class="mobile-socmed-item">
+                    <a class="mobile-socmed-link link">
+                        <svg class="mobile-socmed-icon-svg" width="24" height="24">
+                            <use href="./images/icons.svg#instagram"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-socmed-item">
+                    <a class="mobile-socmed-link link">
+                        <svg class="mobile-socmed-icon-svg" width="24" height="24">
+                            <use href="./images/icons.svg#twitter"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-socmed-item">
+                    <a class="mobile-socmed-link link">
+                        <svg class="mobile-socmed-icon-svg" width="24" height="24">
+                            <use href="./images/icons.svg#facebook"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-socmed-item">
+                    <a class="mobile-socmed-link link">
+                        <svg class="mobile-socmed-icon-svg" width="24" height="24">
+                            <use href="./images/icons.svg#linkedIn"/>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+        </div>   
+
+        <script src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
